@@ -3,7 +3,7 @@ import Card from './utils/Card'
 
 const AiFeature = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-[5rem] py-[8.5rem] text-center">
+    <div className="flex flex-col items-center justify-center gap-[5rem] py-[8.5rem] text-center overflow-hidden">
       <div>
         <SecTitle title={"Supercharge your"} intro={"content experience"} />
         <div className="mt-[1.8rem] max-w-[55rem] text-[1.6rem]">
