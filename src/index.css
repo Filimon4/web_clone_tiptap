@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poly:ital@0;1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Cirka";
+    src: url('/public/fonts/Cirka.ttf') format('ttf');
+  }
+  body {
+    @apply bg-body
+  }
+}
