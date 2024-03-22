@@ -34,19 +34,30 @@ const CompaniesCarousel = () => {
   }, [width, xTranslation])
 
   return (
-    <motion.div 
-      style={{x: xTranslation}}
-      ref={ref}  
-      className='flex justify-start items-center text-center'
-    >
-      <CompaniesStack />
-    </motion.div>
+    <div className='flex'>
+      <motion.div 
+        style={{x: xTranslation}}
+        ref={ref}  
+        className='flex justify-start items-center text-center w-full'
+        >
+        <CompaniesStack />
+      </motion.div>
+    </div>
   )
 }
 
 const CompaniesStack = () => {
   return (
     <div className='flex gap-[2rem]'>
+      <LogoImg logo={logo1}/>
+      <LogoImg logo={logo2}/>
+      <LogoImg logo={logo3}/>
+      <LogoImg logo={logo4}/>
+      <LogoImg logo={logo5}/>
+      <LogoImg logo={logo6}/>
+      <LogoImg logo={logo7}/>
+      <LogoImg logo={logo8}/>
+      <LogoImg logo={logo9}/>
       <LogoImg logo={logo1}/>
       <LogoImg logo={logo2}/>
       <LogoImg logo={logo3}/>
@@ -63,7 +74,7 @@ const CompaniesStack = () => {
 // eslint-disable-next-line react/prop-types
 const LogoImg = ({logo}) => {
   return (
-    <div className='px-[1.5rem] flex-shrink-0'>
+    <div className='flex px-[1.5rem] flex-shrink-0'>
         <img className='self-center' src={logo} alt="" width={125} height={50}/>
     </div>  
   )
