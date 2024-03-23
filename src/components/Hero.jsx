@@ -1,5 +1,5 @@
 import SecHeroTitle from "./utils/SecHeroTitle";
-// import CompaniesCarousel from './utils/CompaniesCarousel'
+import CompaniesCarousel from './utils/CompaniesCarousel'
 import HeaderLight from '../../public/light/header.png'
 
 const Hero = () => {
@@ -32,7 +32,7 @@ const Hero = () => {
           With 20,000+ businesses using Tiptap Editor, there’s a good chance
           we’ve crossed paths.
         </p>
-        {/* <CompaniesCarousel /> TODO */}
+        <CompaniesCarousel />
       </div>
     </div>
   );

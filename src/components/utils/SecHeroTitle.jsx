@@ -1,4 +1,4 @@
-// import Typewriter from "typewriter-effect";
+import Typewriter from "typewriter-effect";
 
 // eslint-disable-next-line react/prop-types
 const SecHeroTitle = ({ title }) => {
@@ -8,7 +8,7 @@ const SecHeroTitle = ({ title }) => {
         {title}
         <br />
         <span className="font-['Cirka'] text-[1.1em] font-thin">
-          {/* <Typewriter
+          <Typewriter
             options={{
               strings: [
                 "real-time synchronisation",
@@ -21,7 +21,7 @@ const SecHeroTitle = ({ title }) => {
               autoStart: true,
               loop: true,              
             }}
-          /> */}
+          />
         </span>
       </h1>
     </div>

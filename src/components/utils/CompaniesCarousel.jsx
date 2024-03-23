@@ -21,24 +21,30 @@ const CompaniesCarousel = () => {
   console.log(width)
 
   useEffect(() => {
-    let finalPosition = (-width / 2) - 30
+    let finalPosition = (-width / 2) - 16
 
     animate(xTranslation, [0, finalPosition], {
       ease: "linear",
-      duration: 20,
+      duration: 45,
       repeat: Infinity,
       repeatType: "loop",
       repeatDelay: 0,
     })
-    // return controls.stop TODO
   }, [width, xTranslation])
 
   return (
-    <div className='flex'>
+    <div className='w-full flex'>
       <motion.div 
         style={{x: xTranslation}}
         ref={ref}  
-        className='flex justify-start items-center text-center w-full'
+        className='flex justify-start items-center text-center w-max'
+        >
+        <CompaniesStack />
+      </motion.div>
+      <motion.div 
+        style={{x: xTranslation}}
+        ref={ref}  
+        className='flex justify-start items-center text-center w-max'
         >
         <CompaniesStack />
       </motion.div>
@@ -49,15 +55,6 @@ const CompaniesCarousel = () => {
 const CompaniesStack = () => {
   return (
     <div className='flex gap-[2rem]'>
-      <LogoImg logo={logo1}/>
-      <LogoImg logo={logo2}/>
-      <LogoImg logo={logo3}/>
-      <LogoImg logo={logo4}/>
-      <LogoImg logo={logo5}/>
-      <LogoImg logo={logo6}/>
-      <LogoImg logo={logo7}/>
-      <LogoImg logo={logo8}/>
-      <LogoImg logo={logo9}/>
       <LogoImg logo={logo1}/>
       <LogoImg logo={logo2}/>
       <LogoImg logo={logo3}/>

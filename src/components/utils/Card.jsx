@@ -9,16 +9,16 @@ const Card = ({ title, desc, id }) => {
   const img = images[(id-1)]
   return (
     <div className="flex-none w-[33.33%] mx-[.7rem]">
-      <a className="flex flex-col justify-between items-start p-[2rem] rounded-[1.5rem] bg-white w-full h-full gap-[1.5rem]" href="/">
+      <a className="flex flex-col justify-between items-start p-[2rem] rounded-[1.5rem] bg-white w-full h-full gap-[2rem]" href="/">
         <div>
           <img src={img} alt="some image" width={40} height={40} />
         </div>
         <div className="flex flex-col text-start justify-between gap-[0.75rem]">
           <h3 className="text-[1.5rem] font-semibold">{title}</h3>
-          <p>{desc}</p>
+          <p className="text-[1.3rem] text-halfwhite font-[500]">{desc}</p>
         </div>
         <div className="flex items-center gap-3 py-[0.9rem]">
-          <p className="font-semibold">Learn more</p>
+          <p className="font-bold">Learn more</p>
           <svg
             width="1em"
             height="1em"

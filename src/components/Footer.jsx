@@ -14,38 +14,38 @@ const Footer = () => {
         <div className='flex gap-[5rem]'>
           <ul className='flex flex-col gap-[.8rem] text-white items-start font-[550]'>
             <li className='py-[0.2rem]'>Product</li>
-            <li className='text-halfwhite'>Editor</li>
-            <li className='text-halfwhite'>Collaboration</li>
-            <li className='text-halfwhite'>Content AI</li>
-            <li className='text-halfwhite'>Documets</li>
-            <li className='text-halfwhite'>Pricing</li>
+            <li className='text-halfblack'>Editor</li>
+            <li className='text-halfblack'>Collaboration</li>
+            <li className='text-halfblack'>Content AI</li>
+            <li className='text-halfblack'>Documets</li>
+            <li className='text-halfblack'>Pricing</li>
           </ul>
           <ul className='flex flex-col gap-[.8rem] text-white items-start font-[550]'>
             <li className='py-[0.2rem]'>Company</li>
-            <li className='text-halfwhite'>Blog</li>
-            <li className='text-halfwhite'>About</li>
-            <li className='text-halfwhite'>Contact us</li>
+            <li className='text-halfblack'>Blog</li>
+            <li className='text-halfblack'>About</li>
+            <li className='text-halfblack'>Contact us</li>
           </ul>
           <ul className='flex flex-col gap-[.8rem] text-white items-start font-[550]'>
             <li className='py-[0.2rem]'>Docs</li>
-            <li className='text-halfwhite'>Editor</li>
-            <li className='text-halfwhite'>Hocuspocus</li>
-            <li className='text-halfwhite'>Extensions</li>
-            <li className='text-halfwhite'>Examples</li>
+            <li className='text-halfblack'>Editor</li>
+            <li className='text-halfblack'>Hocuspocus</li>
+            <li className='text-halfblack'>Extensions</li>
+            <li className='text-halfblack'>Examples</li>
           </ul>
           <ul className='flex flex-col gap-[.8rem] text-white items-start font-[550]'>
             <li className='py-[0.2rem]'>Resources</li>
-            <li className='text-halfwhite' >Release notes</li>
-            <li className='text-halfwhite' >Experiments</li>
-            <li className='text-halfwhite' >MIT license</li>
-            <li className='text-halfwhite' >Pro license</li>
+            <li className='text-halfblack' >Release notes</li>
+            <li className='text-halfblack' >Experiments</li>
+            <li className='text-halfblack' >MIT license</li>
+            <li className='text-halfblack' >Pro license</li>
           </ul>
           <ul className='flex flex-col gap-[.8rem] text-white items-start font-[550]'>
             <li className='py-[0.2rem]'>Connect</li>
-            <li className='text-halfwhite'>GitHub</li>
-            <li className='text-halfwhite'>Discord</li>
-            <li className='text-halfwhite'>LinkedIn</li>
-            <li className='text-halfwhite'>X</li>
+            <li className='text-halfblack'>GitHub</li>
+            <li className='text-halfblack'>Discord</li>
+            <li className='text-halfblack'>LinkedIn</li>
+            <li className='text-halfblack'>X</li>
           </ul>
         </div>
         <div>

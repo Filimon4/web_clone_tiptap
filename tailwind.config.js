@@ -31,7 +31,8 @@ export default {
       "card": "rgb(245 245 244)",
       "white": "rgb(255,255,255)",
       "footer-bag": "rgb(26 25 25)",
-      "halfwhite": "rgba(255,255,255,0.6)"
+      "halfwhite": "rgba(0,0,0,0.6)",
+      "halfblack": "rgba(255,255,255,0.6)"
     },
   },
   plugins: [],

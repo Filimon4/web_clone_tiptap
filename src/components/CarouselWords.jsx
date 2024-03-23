@@ -7,11 +7,11 @@ import useMeasure from 'react-use-measure';
 const CarouselWords = () => {
   return (
     <div className="flex flex-col overflow-hidden">
-      <CarouselLeftWord word={"Headless"} duration={40} />
-      <CarouselRightWord word={"Your unique UX"} duration={32} />
-      <CarouselLeftWord word={"Easy to integrate"} duration={38} />
-      <CarouselRightWord word={"Creative control"} duration={37} />
-      <CarouselLeftWord word={"Extend and Adapt"} duration={45}/>
+      <CarouselLeftWord word={"Headless"} duration={50} />
+      <CarouselRightWord word={"Your unique UX"} duration={42} />
+      <CarouselLeftWord word={"Easy to integrate"} duration={48} />
+      <CarouselRightWord word={"Creative control"} duration={47} />
+      <CarouselLeftWord word={"Extend and Adapt"} duration={55}/>
     </div>
   );
 };
@@ -24,9 +24,7 @@ const CarouselRightWord = ({word, duration = 7}) => {
   useEffect(() => {
     let controls;
     const finalPosition = (width / 2 - 16)
-    console.log(finalPosition)
 
-    // eslint-disable-next-line no-unused-vars
     controls = animate(xTranslation, [0, finalPosition], {
       ease: "linear",
       duration: duration,
@@ -34,7 +32,7 @@ const CarouselRightWord = ({word, duration = 7}) => {
       repeatType: "loop",
       repeatDelay: 0,
     })
-  }, [xTranslation])
+  }, [xTranslation, width])
   
   return (
     <motion.div
@@ -65,7 +63,6 @@ const CarouselLeftWord = ({ word, duration = 7 }) => {
     let controls;
     const finalPosition = (-width / 2 - 16)
 
-    // eslint-disable-next-line no-unused-vars
     controls = animate(xTranslation, [0, finalPosition], {
       ease: "linear",
       duration: duration,
@@ -73,7 +70,7 @@ const CarouselLeftWord = ({ word, duration = 7 }) => {
       repeatType: "loop",
       repeatDelay: 0,
     })
-  }, [xTranslation])
+  }, [xTranslation, width])
   
   return (
     <motion.div
