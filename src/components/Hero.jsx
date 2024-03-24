@@ -27,7 +27,7 @@ const Hero = () => {
         </div>
       </div>
       
-      <div className="flex justify-center items-center flex-col gap-6">
+      <div className="flex justify-center items-center flex-col gap-6 ">
         <p className="text-sm font-semibold max-x-[90vw]">
           With 20,000+ businesses using Tiptap Editor, there’s a good chance
           we’ve crossed paths.

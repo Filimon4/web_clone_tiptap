@@ -3,7 +3,7 @@ import SignButn from "./utils/SignButn";
 
 const Nav = () => {
   return (
-    <div className="fixed m-auto mt-4 flex w-[100vw] justify-center bg-opacity-0 z-10">
+    <div className="fixed m-auto mt-4 flex w-[100vw] justify-center bg-opacity-0 z-50">
       <div className="flex justify-center gap-16 rounded-xl bg-nav pb-[0.4rem] pl-[0.9rem] pr-[0.4rem] pt-[0.4rem] shadow-xs">
         <div className="flex items-center ">
           <a href="/" className="flex h-4">

@@ -33,11 +33,11 @@ const CompaniesCarousel = () => {
   }, [width, xTranslation])
 
   return (
-    <div className='w-full flex'>
+    <div className='w-full flex '>
       <motion.div 
         style={{x: xTranslation}}
         ref={ref}  
-        className='flex justify-start items-center text-center w-max'
+        className='flex justify-start items-center text-center w-max '
         >
         <CompaniesStack />
       </motion.div>
