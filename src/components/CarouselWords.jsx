@@ -6,7 +6,7 @@ import useMeasure from 'react-use-measure';
 
 const CarouselWords = () => {
   return (
-    <div className="flex flex-col overflow-hidden">
+    <div className="flex flex-col overflow-hidden my-[8.5rem]">
       <CarouselLeftWord word={"Headless"} duration={50} />
       <CarouselRightWord word={"Your unique UX"} duration={42} />
       <CarouselLeftWord word={"Easy to integrate"} duration={48} />

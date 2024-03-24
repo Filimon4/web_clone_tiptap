@@ -4,7 +4,7 @@ import HeaderLight from '../../public/light/header.png'
 
 const Hero = () => {
   return (
-    <div className="relative flex flex-col justify-center py-[14rem] items-center gap-24">
+    <div className="relative flex flex-col justify-center py-[14rem] items-center gap-24 overflow-hidden">
       <div className="absolute flex h-0 justify-center items-center top-[14rem] mt-[5rem] ml-[50%] z-1 right-0">
         <img className="w-[70vw] max-w-[55rem]" src={HeaderLight} sizes="(max-width: 767px) 100vw, (max-width: 991px) 880px, (max-width: 1279px) 70vw, 880px"/>
       </div>

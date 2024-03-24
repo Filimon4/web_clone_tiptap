@@ -33,7 +33,7 @@ const CompaniesCarousel = () => {
   }, [width, xTranslation])
 
   return (
-    <div className='w-full flex '>
+    <div className='w-full flex'>
       <motion.div 
         style={{x: xTranslation}}
         ref={ref}  
