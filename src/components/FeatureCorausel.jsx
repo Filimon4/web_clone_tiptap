@@ -28,7 +28,7 @@ const FeatureCorausel = () => {
     const imgsElement = carouselImgs.current.querySelectorAll('[data-id]') 
     const cardElement = e.target.closest('[data-id]')
     const {id} = cardElement.dataset
-
+    
     let choosenCard;
     let rootCard;
     for (let item of allCards) {

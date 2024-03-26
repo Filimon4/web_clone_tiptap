@@ -33,10 +33,13 @@ export default {
       "footer-bag": "rgb(26 25 25)",
       "halfwhite": "rgba(0,0,0,0.6)",
       "halfblack": "rgba(255,255,255,0.6)",
-      "cardback": "rgba(255,255,255,0.2)"
+      "cardback": "rgba(255,255,255,0.2)",
+      "black": "rgb(0,0,0)"
     },
     boxShadow: {
-      "card": "0px 0px 0px 1px rgb(255,255,255 / 0.6)"
+      "card": "0px 0px 0px 1px rgb(255,255,255 / 0.6)",
+      "button-try": "4px 4px 0px -1px rgb(13 13 13)",
+      "button-sign": "3px 4px rgb(0,0,0)"
     }
   },
   plugins: [],
