@@ -1,5 +1,7 @@
+import { useState } from "react";
 import Logo from "./utils/Logo";
 import SignButn from "./utils/SignButn";
+import {motion} from 'framer-motion'
 
 const Nav = () => {
   return (
@@ -10,9 +12,7 @@ const Nav = () => {
             <Logo />
           </a>
           <div className="ml-6 flex items-center">
-            <a className="cursor-pointer px-[1rem] pb-[0.5rem] pt-[0.6rem]">
-              Product
-            </a>
+            <NavLink title={"Product"} />
             <a className="cursor-pointer px-[1rem] pb-[0.5rem] pt-[0.6rem]">
               Blog
             </a>
@@ -34,5 +34,48 @@ const Nav = () => {
     </div>
   );
 };
+
+// eslint-disable-next-line react/prop-types
+const NavLink = ({title}) => {
+
+  const variants = {
+    visible: {
+      "nav-btn::before": {
+        opacity: "1",
+        transform: "scale(100%)"
+      }
+    },
+    hidden: {
+      "nav-btn::before": {
+        opacity: '1',
+        transform: 'scale(100%)'
+      }
+    }
+  }
+
+  const list = {
+    visible: {
+    },
+    hidden: {
+    }
+  }
+
+  return (
+    <motion.a
+      className="cursor-pointer px-[1rem] pb-[0.5rem] pt-[0.6rem] relative"
+      variants={list}
+      initial='hidden'
+      whileHover='visible'
+    >
+      <motion.div 
+        className="nav-btn"
+        variants={variants}
+        initial="hidden"
+        onHoverStart={(e) => console.log(e)}
+      />
+      {title}
+    </motion.a>
+  )
+}
 
 export default Nav;
