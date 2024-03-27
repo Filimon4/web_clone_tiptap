@@ -13,20 +13,12 @@ const Nav = () => {
           </a>
           <div className="ml-6 flex items-center">
             <NavLink title={"Product"} />
-            <a className="cursor-pointer px-[1rem] pb-[0.5rem] pt-[0.6rem]">
-              Blog
-            </a>
-            <a className="cursor-pointer px-[1rem] pb-[0.5rem] pt-[0.6rem]">
-              Docs
-            </a>
-            <a className="cursor-pointer px-[1rem] pb-[0.5rem] pt-[0.6rem]">
-              Pricing
-            </a>
+            <NavLink title={"Blog"} />
+            <NavLink title={"Docs"} />
+            <NavLink title={"Pricing"} />
           </div>
-          <div className="ml-9 flex items-center">
-            <a className="cursor-pointer px-[1rem] pb-[0.5rem] pt-[0.6rem]">
-              Log in
-            </a>
+          <div className="ml-9 flex items-center gap-2">
+            <NavLink title={"Log in"} />
             <SignButn />
           </div>
         </div>
@@ -37,41 +29,21 @@ const Nav = () => {
 
 // eslint-disable-next-line react/prop-types
 const NavLink = ({title}) => {
-
-  const variants = {
-    visible: {
-      "nav-btn::before": {
-        opacity: "1",
-        transform: "scale(100%)"
-      }
-    },
-    hidden: {
-      "nav-btn::before": {
-        opacity: '1',
-        transform: 'scale(100%)'
-      }
-    }
-  }
-
-  const list = {
-    visible: {
-    },
-    hidden: {
-    }
-  }
+  const [hoverOn, setHoverOn] = useState(false)
 
   return (
     <motion.a
       className="cursor-pointer px-[1rem] pb-[0.5rem] pt-[0.6rem] relative"
-      variants={list}
-      initial='hidden'
-      whileHover='visible'
+      animate={hoverOn ? 'hover' : 'free'}
+      onHoverStart={() => setHoverOn(true)}
+      onHoverEnd={() => setHoverOn(false)}
     >
       <motion.div 
-        className="nav-btn"
-        variants={variants}
-        initial="hidden"
-        onHoverStart={(e) => console.log(e)}
+        className={`
+          nav-btn before:transition-all before:duration-[250ms] before:animate-[cubic-bezier(0.65, 0, 0.35, 1)] 
+          ${hoverOn ? 'before:scale-[100%] before:opacity-100' : 'before:scale-[40%] before:opacity-0'}
+        `}
+        initial="free"
       />
       {title}
     </motion.a>
